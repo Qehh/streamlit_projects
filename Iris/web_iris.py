@@ -16,7 +16,7 @@ from PIL import Image
 
 st.title('Определение вида ириса по параметрам околоцветника')
 #image = Image.open('iris_photo.jpg')
-image = Image.open('iris_photo.jpg')
+image = Image.open('Iris/iris_photo.jpg')
 st.image(image)
 
 '''
@@ -24,7 +24,7 @@ st.image(image)
 
 '''
 
-model = joblib.load('model_lr_downloaded.joblib') # загрузка модели
+model = joblib.load('Iris/model_lr_downloaded.joblib') # загрузка модели
 
 SepalLength = st.slider('Sepal Length, cm', min_value=4.3, max_value=7.9, value=5.0, step=0.1)
 SepalWidth = st.slider('Sepal Width, cm,', min_value=2.0, max_value=4.4, value=2.2, step=0.1)
