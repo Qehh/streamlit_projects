@@ -8,20 +8,11 @@ Created on Wed Feb 10 20:23:21 2021
 import streamlit as st
 import joblib
 from PIL import Image
-# >>> image = Image.open('sunrise.jpg')
-# >>>
-# >>> st.image(image, caption='Sunrise by the mountains',
-# ...          use_column_width=True)
-
 
 st.title('Определение вида ириса по параметрам околоцветника')
-#image = Image.open('Iris/iris_photo.jpg')
-#image = Image.open('Iris/iris-versicolor.jpg')
-#st.image(image)
-
 
 '''
-## определяем цветок
+## определяем цветок :sunglasses:
 
 '''
 
@@ -49,16 +40,3 @@ if iris_type[0] == 'Iris-virginica':
     st.image(image)
 
 
-# # x = st.slider('x', min_value=5.0, max_value=20.0, value=10.0, step=0.1)
-# # y = st.slider('y', max_value=35)
-# # z = st.slider('z', max_value=55)
-
-
-
-# # st.write('# x+y+z =', x+y+z)
-
-# from datetime import datetime
-# start_time = st.slider("When do you start?",
-#                        value=datetime(2020, 1, 1, 9, 30),
-#                        format="MM/DD/YY - hh:mm")
-# st.write("Start time:", start_time)
