@@ -15,9 +15,10 @@ from PIL import Image
 
 
 st.title('Определение вида ириса по параметрам околоцветника')
-#image = Image.open('iris_photo.jpg')
-image = Image.open('Iris/iris_photo.jpg')
+#image = Image.open('Iris/iris_photo.jpg')
+image = Image.open('Iris/iris-versicolor.jpg')
 st.image(image)
+
 
 '''
 ## определяем цветок
