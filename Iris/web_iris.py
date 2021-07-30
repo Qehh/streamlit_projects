@@ -35,6 +35,15 @@ PetalWidth = st.slider('Petal Width, cm', min_value=0.1, max_value=2.5, value=1.
 iris_type = model.predict([[SepalLength, SepalWidth, PetalLength, PetalWidth]])
 st.write('## Тип цветка: ', iris_type[0])
 
+if iris_type[0] == 'Iris-setosa':
+    image = Image.open('Iris/iris-setosa.jpg')
+    
+if iris_type[0] == 'Iris-versicolor':
+    image = Image.open('Iris/iris-versicolor.jpg')
+    
+if iris_type[0] == 'Iris-virginica':
+    image = Image.open('Iris/iris-virginica.jpg')
+
 
 # # x = st.slider('x', min_value=5.0, max_value=20.0, value=10.0, step=0.1)
 # # y = st.slider('y', max_value=35)
