@@ -37,12 +37,15 @@ st.write('## Тип цветка: ', iris_type[0])
 
 if iris_type[0] == 'Iris-setosa':
     image = Image.open('Iris/iris-setosa.jpg')
+    st.image(image)
     
 if iris_type[0] == 'Iris-versicolor':
     image = Image.open('Iris/iris-versicolor.jpg')
+    st.image(image)
     
 if iris_type[0] == 'Iris-virginica':
     image = Image.open('Iris/iris-virginica.jpg')
+    st.image(image)
 
 
 # # x = st.slider('x', min_value=5.0, max_value=20.0, value=10.0, step=0.1)
