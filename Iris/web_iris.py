@@ -28,7 +28,7 @@ iris_type = model.predict([[SepalLength, SepalWidth, PetalLength, PetalWidth]])
 #st.write('## Тип цветка: ', iris_type[0])
 
 # расположение изображения по центру
-col1, col2, col3 = st.beta_columns([1,5,1])
+col1, col2, col3 = st.beta_columns([1,2,1])
 
 if iris_type[0] == 'Iris-setosa':
     with col1:
