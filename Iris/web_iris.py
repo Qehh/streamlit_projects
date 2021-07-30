@@ -30,28 +30,33 @@ iris_type = model.predict([[SepalLength, SepalWidth, PetalLength, PetalWidth]])
 # расположение изображения по центру
 col1, col2, col3 = st.beta_columns([1,5,1])
 
-with col1:
-    st.write("")
-
-with col2:
-    image = Image.open('Iris/iris-versicolor.jpg')
-    st.image(image)
-
-with col3:
-    st.write("")
-
-'''
 if iris_type[0] == 'Iris-setosa':
-    image = Image.open('Iris/iris-setosa.jpg')
-    st.image(image)
-    
+    with col1:
+        st.write("")
+    with col2:
+        image = Image.open('Iris/iris-setosa.jpg')
+        st.image(image)
+    with col3:
+        st.write("")
+            
 if iris_type[0] == 'Iris-versicolor':
-    image = Image.open('Iris/iris-versicolor.jpg')
-    st.image(image)
-    
+    with col1:
+        st.write("")
+    with col2:
+        image = Image.open('Iris/iris-versicolor.jpg')
+        st.image(image)
+    with col3:
+        st.write("")
+        
 if iris_type[0] == 'Iris-virginica':
-    image = Image.open('Iris/iris-virginica.jpg')
-    st.image(image)
-'''
+    with col1:
+        st.write("")
+    with col2:
+        image = Image.open('Iris/iris-virginica.jpg')
+        st.image(image)
+    with col3:
+        st.write("")
+    
+
 
 
