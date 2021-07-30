@@ -34,7 +34,7 @@ PetalWidth = st.slider('Petal Width, cm', min_value=0.1, max_value=2.5, value=1.
 
 
 iris_type = model.predict([[SepalLength, SepalWidth, PetalLength, PetalWidth]])
-st.write('## Тип цветка: ', iris_type[0])
+#st.write('## Тип цветка: ', iris_type[0])
 
 if iris_type[0] == 'Iris-setosa':
     image = Image.open('Iris/iris-setosa.jpg')
